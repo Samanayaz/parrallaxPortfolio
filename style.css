@@ -1,0 +1,146 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /*	fixed = parallax
+	scroll = normal*/
+
+  background-attachment: fixed;
+}
+
+.certification {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 10em;
+}
+
+.certification img {
+  padding: 0.5em;
+  width: 400px;
+  height: 300px;
+}
+
+.icons {
+  padding-top: 3em;
+}
+.icons i {
+  font-size: 2em;
+  color: #000;
+}
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  z-index: 1;
+  grid-gap: 2em;
+  padding-bottom: 10em;
+  position: relative;
+  bottom: 12em;
+}
+.projects img {
+  width: 300px;
+  height: 200px;
+  background-color: #666;
+  border: solid #444 8px;
+}
+.pimg1 {
+  background-image: url("img/tanner-van-dera-oaQ2mTeaP7o-unsplash.jpg");
+
+  min-height: 100%;
+}
+
+.pimg2 {
+  background-image: url("img/person-using-black-tablet-computer-3740387.jpg");
+  min-height: 100%;
+}
+
+.pimg3 {
+  background-image: url("img/person-using-black-tablet-computer-3740860.jpg");
+  min-height: 100%;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 35px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.ptext .border.trans {
+  background-color: transparent;
+}
+.contact-info {
+}
+.contact {
+  display: block;
+  width: 600px;
+  height: 3.2em;
+  border: solid 4px #444;
+  color: black;
+  background-color: rgb(240, 238, 236);
+  margin: 15px;
+  font-size: 22px;
+}
+
+/*For Mobile Responsiveness*/
+@media (max-width: 650px) {
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    background-attachment: scroll;
+  }
+
+  .certification {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
