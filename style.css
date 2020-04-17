@@ -132,6 +132,7 @@ html {
   .pimg2,
   .pimg3 {
     background-attachment: scroll;
+    max-width: 100%;
   }
 
   .certification {
