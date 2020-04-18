@@ -38,7 +38,9 @@ html {
   width: 400px;
   height: 300px;
 }
-
+.certification a:hover {
+  transform: scale(1.5);
+}
 .icons {
   padding-top: 3em;
 }
@@ -125,7 +127,24 @@ html {
   margin: 15px;
   font-size: 22px;
 }
+.contact:hover {
+  transform: scale(1.2);
+  color: white;
+  background-color: tomato;
+}
+.items:hover {
+  transform: skew(10deg);
 
+  animation: skew 3s infinite;
+}
+@keyframes skew {
+  0% {
+    transform: skew(10deg, 10deg);
+  }
+  100% {
+    transform: skew(-10deg, -10deg);
+  }
+}
 /*For Mobile Responsiveness*/
 @media (max-width: 650px) {
   .pimg1,
