@@ -46,7 +46,7 @@ html {
 }
 .icons i {
   font-size: 2em;
-  color: #000;
+  color: rgb(160, 148, 148);
 }
 .projects {
   display: grid;
@@ -115,6 +115,13 @@ html {
 .ptext .border.trans {
   background-color: transparent;
 }
+.heading1:hover {
+  transform: scale(2) skew(-20deg);
+  transform: translate(70px, -50px);
+  /* transform: translate(50px, -50px); */
+  color: rgb(236, 240, 14);
+  font-size: 3em;
+}
 .contact-info {
 }
 .contact {
@@ -147,13 +154,27 @@ html {
 }
 /*For Mobile Responsiveness*/
 @media (max-width: 650px) {
+  .heading1 {
+    font-size: 1.2em;
+    color: rebeccapurple;
+    border: rgb(240, 238, 236);
+  }
+  .heading1:hover {
+    font-size: 1.4em;
+    color: white;
+  }
+  .icons a:hover {
+    color: whitesmoke;
+  }
   .pimg1,
   .pimg2,
   .pimg3 {
     background-attachment: scroll;
     max-width: 100%;
   }
-
+  .pimg3 {
+    height: 210%;
+  }
   .certification {
     display: flex;
     flex-direction: column;
@@ -162,5 +183,6 @@ html {
   .projects {
     display: grid;
     grid-template-columns: 1fr;
+    margin: -10em 0 10em 0;
   }
 }
