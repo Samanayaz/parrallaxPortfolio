@@ -8,7 +8,17 @@ html {
   line-height: 1.8em;
   color: #666;
 }
-
+.photo img {
+  width: 200px;
+  height: 270px;
+  border: solid grey 5px;
+  border-radius: 35%;
+  opacity: 0.9;
+}
+.detail {
+  display: flex;
+  align-items: center;
+}
 .pimg1,
 .pimg2,
 .pimg3 {
@@ -41,12 +51,14 @@ html {
 .certification a:hover {
   transform: scale(1.5);
 }
-.icons {
-  padding-top: 3em;
-}
+
 .icons i {
   font-size: 2em;
   color: rgb(160, 148, 148);
+  margin-top: -2em;
+}
+.icons i:hover {
+  font-size: 3em;
 }
 .projects {
   display: grid;
@@ -163,8 +175,10 @@ html {
     font-size: 1.4em;
     color: white;
   }
-  .icons a:hover {
-    color: whitesmoke;
+
+  .detail {
+    display: flex;
+    flex-direction: column;
   }
   .pimg1,
   .pimg2,
