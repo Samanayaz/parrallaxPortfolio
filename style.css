@@ -13,7 +13,7 @@ html {
   height: 270px;
   border: solid grey 5px;
   border-radius: 35%;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .detail {
   display: flex;
@@ -162,6 +162,12 @@ html {
   }
   100% {
     transform: skew(-10deg, -10deg);
+  }
+}
+
+@media (min-width: 1400px) {
+  .detail div {
+    padding: 0 3em 0 3em;
   }
 }
 /*For Mobile Responsiveness*/
