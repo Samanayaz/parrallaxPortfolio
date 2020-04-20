@@ -59,6 +59,7 @@ html {
 }
 .icons i:hover {
   font-size: 3em;
+  color: whitesmoke;
 }
 .projects {
   display: grid;
@@ -131,7 +132,7 @@ html {
   transform: scale(2) skew(-20deg);
   transform: translate(70px, -50px);
   /* transform: translate(50px, -50px); */
-  color: rgb(236, 240, 14);
+  color: rgb(49, 162, 190);
   font-size: 3em;
 }
 .contact-info {
@@ -178,7 +179,7 @@ html {
     border: rgb(240, 238, 236);
   }
   .heading1:hover {
-    font-size: 1.4em;
+    font-size: 1.9em;
     color: white;
   }
 
