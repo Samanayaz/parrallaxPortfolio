@@ -194,7 +194,8 @@ html {
     max-width: 100%;
   }
   .pimg3 {
-    height: 270%;
+    height: 220%;
+    padding-bottom: 20em;
   }
   .certification {
     display: flex;
