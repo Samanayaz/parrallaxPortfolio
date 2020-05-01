@@ -154,7 +154,6 @@ html {
 }
 .items:hover {
   transform: skew(10deg);
-
   animation: skew 3s infinite;
 }
 @keyframes skew {
